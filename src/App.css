@@ -2,19 +2,7 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.App-Header {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -23,16 +11,33 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url('/public/weather-scenarios-collage-dbk9c5n23l7e5fgb.jpg'); /* si está en public */
+  background-size: cover;             /* ajusta la imagen al tamaño */
+  background-repeat: no-repeat;       /* no se repite */
+  background-position: center center; /* centrada */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Glass-Tittle{
+  background: rgba(255, 255, 255, 0.2);  /* Fondo blanco semitransparente */
+  backdrop-filter: blur(10px);           /* Difumina lo que hay detrás */
+  -webkit-backdrop-filter: blur(10px);   /* Para compatibilidad con Safari */
+  padding: 20px 40px;
+  border-radius: 15px;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);  /* Hace el texto más legible */
+  display: inline-block;
+  margin-top: 40px;
+}
+
+.Select-Provincia{
+  font-size: 18px;
+  padding: 10px;
+  width: 250px;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  margin-top: 20px;
 }
