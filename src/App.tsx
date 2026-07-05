@@ -15,7 +15,7 @@ function App() {
       try {
         // Llamado a la API 
         const respuesta = await fetch(
-          "http://secure.geonames.org/searchJSON?country=AR&featureCode=PPLA&maxRows=1000&username=gastoncaceres"
+          "https://secure.geonames.org/searchJSON?country=AR&featureCode=PPLA&maxRows=1000&username=gastoncaceres"
         );
         const data = await respuesta.json();
 
