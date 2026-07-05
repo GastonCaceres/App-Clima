@@ -15,7 +15,7 @@ function App() {
       try {
         // Llamado a la API 
         const respuesta = await fetch(
-          "http://api.geonames.org/searchJSON?country=AR&featureCode=PPLA&maxRows=1000&username=gastoncaceres"
+          "http://secure.geonames.org/searchJSON?country=AR&featureCode=PPLA&maxRows=1000&username=gastoncaceres"
         );
         const data = await respuesta.json();
 
@@ -83,7 +83,7 @@ function App() {
   // Renderizado del componente
   return (
     <div className="App-Header">
-      
+
       <h1 className="Glass-Tittle">Selecciona una provincia</h1>
 
       {/* Menú desplegable */}
