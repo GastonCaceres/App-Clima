@@ -56,7 +56,7 @@ function App() {
     }
 
     const obtenerClima = async () => {
-      const apiKey = "2e0fdb5485099cd0af972990d0ecec31";
+      const apiKey = process.env.REACT_APP_OPENWEATHER_KEY;
 
       // Consulta a OpenWeatherMap para obtener el clima de la ciudad capital
       const respuesta = await fetch(
